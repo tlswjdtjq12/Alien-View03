@@ -31,16 +31,16 @@ class ViewController: UIViewController {
         
         
         if counter == 5 {
-            de = false
-        } else if counter == 1 {
+            de = false // counter의 값이 5일때 de는 false
+        } else if counter == 1 {  //counter의 값이 1일때 de는 true
             de = true
         }
         
         if de == false {
-            counter = counter - 1
+            counter = counter - 1 // 내리막길
             
         } else {
-            counter = counter + 1
+            counter = counter + 1 // 오르막길
         }
         alienImageView.image = UIImage(named: "frame\(counter).png")
         lbl01.text = "\(counter)"
